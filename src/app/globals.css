@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FBF7EF;
+  --foreground: #2A241F;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-display {
+    font-family: var(--font-fraunces), ui-serif, Georgia, serif;
+  }
+  .eyebrow {
+    @apply font-body text-xs tracking-widest2 uppercase text-sage-dark font-medium;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
