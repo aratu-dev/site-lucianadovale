@@ -33,11 +33,11 @@ export const hero = {
     "Na Clínica Luciana do Vale, cada tratamento começa com um diagnóstico cuidadoso para identificar a verdadeira causa da queda capilar e das alterações do couro cabeludo. Unimos ciência, tecnologia e atendimento humanizado para desenvolver protocolos personalizados para cada paciente.",
   ctaPrimario: "Agendar avaliação",
   ctaSecundario: "Conhecer a clínica",
-  antesDepois: {
-    antes: "",
-    depois: "",
-    legenda: "Resultado real após protocolo personalizado de terapia capilar",
-  },
+antesDepois: {
+  antes: "/images/hero-antes.jpg",
+  depois: "/images/hero-depois.jpg",
+  legenda: "Resultado real após protocolo personalizado de terapia capilar",
+},
 };
 
 export const conceito = {
@@ -121,7 +121,7 @@ export const sobre = {
   titulo: "Conhecimento aliado ao cuidado humano",
   nome: "Luciana do Vale",
   credencial: "Terapeuta Capilar · Especialista em Tricologia",
-  imagem: "",
+  imagem: "/images/luciana.jpg",
   paragrafos: [
     "Luciana do Vale é terapeuta capilar especializada em tricologia e dedica seu trabalho ao cuidado da saúde do couro cabeludo e dos fios.",
     "Seu atendimento é baseado em uma abordagem individualizada, respeitando as características de cada paciente para desenvolver protocolos personalizados que unem ciência, tecnologia e acolhimento.",
