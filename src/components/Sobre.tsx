@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { sobre } from "@/lib/content";
 import PlaceholderImage from "./PlaceholderImage";
 
@@ -5,11 +6,19 @@ export default function Sobre() {
   return (
     <section id="sobre" className="mx-auto max-w-content px-6 py-24 md:py-32">
       <div className="grid gap-14 md:grid-cols-2 md:items-center">
-        <PlaceholderImage
-          icon="sparkles"
-          tone="gold"
-          className="aspect-[4/5] rounded-[28px]"
-        />
+        <div className="relative aspect-[4/5] overflow-hidden rounded-[28px]">
+          {sobre.imagem ? (
+            <Image
+              src={sobre.imagem}
+              alt={sobre.nome}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          ) : (
+            <PlaceholderImage label="Retrato da Luciana" icon="sparkles" tone="gold" className="h-full w-full" />
+          )}
+        </div>
         <div>
           <span className="eyebrow">{sobre.eyebrow}</span>
           <h2 className="mt-4 font-display text-3xl leading-tight text-ink md:text-4xl">

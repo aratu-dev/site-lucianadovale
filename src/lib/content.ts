@@ -43,6 +43,7 @@ export const hero = {
 export const conceito = {
   eyebrow: "Nossa abordagem",
   titulo: "Um novo olhar para a terapia capilar",
+  imagem: "",
   paragrafos: [
     "Mais do que tratar os fios, acreditamos que cada paciente merece compreender a origem do seu problema capilar.",
     "Por isso, nossos protocolos começam por uma avaliação individualizada, utilizando recursos tecnológicos e conhecimento em tricologia para identificar as causas da queda de cabelo, afinamento dos fios e alterações no couro cabeludo.",
@@ -55,14 +56,7 @@ export const espaco = {
   titulo: "Um ambiente pensado para cuidar de você",
   texto:
     "Cada detalhe da clínica foi planejado para proporcionar conforto, privacidade e tranquilidade durante todo o tratamento. Aqui você encontra um ambiente acolhedor aliado à tecnologia necessária para um diagnóstico preciso e um acompanhamento próximo em cada etapa da sua evolução.",
-  fotos: [
-    "/images/espaco-1.jpg",
-    "/images/espaco-2.jpg",
-    "/images/espaco-3.jpg",
-    "/images/espaco-4.jpg",
-    "/images/espaco-5.jpg",
-    "/images/espaco-6.jpg",
-  ],
+  fotos: ["", "", "", "", "", ""],
 };
 
 export const tratamentos = {
@@ -127,6 +121,7 @@ export const sobre = {
   titulo: "Conhecimento aliado ao cuidado humano",
   nome: "Luciana do Vale",
   credencial: "Terapeuta Capilar · Especialista em Tricologia",
+  imagem: "",
   paragrafos: [
     "Luciana do Vale é terapeuta capilar especializada em tricologia e dedica seu trabalho ao cuidado da saúde do couro cabeludo e dos fios.",
     "Seu atendimento é baseado em uma abordagem individualizada, respeitando as características de cada paciente para desenvolver protocolos personalizados que unem ciência, tecnologia e acolhimento.",

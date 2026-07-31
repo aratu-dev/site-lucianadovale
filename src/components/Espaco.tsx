@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { espaco } from "@/lib/content";
 import PlaceholderImage from "./PlaceholderImage";
 
@@ -24,16 +25,30 @@ export default function Espaco() {
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-6 md:grid-rows-2">
-          {espaco.fotos.map((_, i) => (
-            <PlaceholderImage
-              key={i}
-              label={`Espaço · foto ${i + 1}`}
-              icon={icons[i % icons.length]}
-              tone={tones[i % tones.length]}
-              className={`rounded-2xl aspect-square ${
+          {espaco.fotos.map((foto, i) => (
+            <div
+              key={foto || i}
+              className={`relative overflow-hidden rounded-2xl aspect-square ${
                 i === 0 ? "md:col-span-2 md:row-span-2 md:aspect-auto" : ""
               }`}
-            />
+            >
+              {foto ? (
+                <Image
+                  src={foto}
+                  alt={`Espaço da clínica — foto ${i + 1}`}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
+                  className="object-cover"
+                />
+              ) : (
+                <PlaceholderImage
+                  label={`Espaço · foto ${i + 1}`}
+                  icon={icons[i % icons.length]}
+                  tone={tones[i % tones.length]}
+                  className="h-full w-full"
+                />
+              )}
+            </div>
           ))}
         </div>
       </div>
