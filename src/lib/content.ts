@@ -43,7 +43,7 @@ antesDepois: {
 export const conceito = {
   eyebrow: "Nossa abordagem",
   titulo: "Um novo olhar para a terapia capilar",
-  imagem: "",
+  imagem: "/images/conceito.jpg",
   paragrafos: [
     "Mais do que tratar os fios, acreditamos que cada paciente merece compreender a origem do seu problema capilar.",
     "Por isso, nossos protocolos começam por uma avaliação individualizada, utilizando recursos tecnológicos e conhecimento em tricologia para identificar as causas da queda de cabelo, afinamento dos fios e alterações no couro cabeludo.",
@@ -56,7 +56,14 @@ export const espaco = {
   titulo: "Um ambiente pensado para cuidar de você",
   texto:
     "Cada detalhe da clínica foi planejado para proporcionar conforto, privacidade e tranquilidade durante todo o tratamento. Aqui você encontra um ambiente acolhedor aliado à tecnologia necessária para um diagnóstico preciso e um acompanhamento próximo em cada etapa da sua evolução.",
-  fotos: ["", "", "", "", "", ""],
+  fotos: [
+  "/images/espaco-1.jpg",
+  "/images/espaco-2.jpg",
+  "/images/espaco-3.jpg",
+  "/images/espaco-4.jpg",
+  "/images/espaco-5.jpg",
+  "/images/espaco-6.jpg",
+],
 };
 
 export const tratamentos = {
@@ -65,13 +72,13 @@ export const tratamentos = {
   texto:
     "Após uma avaliação completa, desenvolvemos protocolos personalizados para tratar diferentes alterações capilares e do couro cabeludo. Os principais atendimentos incluem:",
   // Tratamentos com destaque visual (mini antes/depois) na grade principal
-  destaques: [
-    { titulo: "Alopecia androgenética", antes: "", depois: "" },
-    { titulo: "Alopecia areata", antes: "", depois: "" },
-    { titulo: "Eflúvio telógeno", antes: "", depois: "" },
-    { titulo: "Queda capilar feminina e masculina", antes: "", depois: "" },
-    { titulo: "Acompanhamento pós-transplante capilar", antes: "", depois: "" },
-  ],
+destaques: [
+  { titulo: "Alopecia androgenética", antes: "/images/tratamentos/alopecia-androgenetica-antes.jpg", depois: "/images/tratamentos/alopecia-androgenetica-depois.jpg" },
+  { titulo: "Alopecia areata", antes: "/images/tratamentos/alopecia-areata-antes.jpg", depois: "/images/tratamentos/alopecia-areata-depois.jpg" },
+  { titulo: "Eflúvio telógeno", antes: "/images/tratamentos/efluvio-telogeno-antes.jpg", depois: "/images/tratamentos/efluvio-telogeno-depois.jpg" },
+  { titulo: "Queda capilar feminina e masculina", antes: "/images/tratamentos/queda-capilar-antes.jpg", depois: "/images/tratamentos/queda-capilar-depois.jpg" },
+  { titulo: "Acompanhamento pós-transplante capilar", antes: "/images/tratamentos/pos-transplante-antes.jpg", depois: "/images/tratamentos/pos-transplante-depois.jpg" },
+],
   // Demais atendimentos, listados como pills simples
   outros: ["Dermatite seborreica", "Psoríase do couro cabeludo", "Recuperação da saúde dos fios"],
 };
