@@ -16,12 +16,12 @@ export default function Home() {
     <main className="bg-ivory">
       <Header />
       <Hero />
-      <Conceito />
+      <Sobre />
       <Espaco />
       <Tratamentos />
       <Diferenciais />
       <Jornada />
-      <Sobre />
+      <Conceito />
       <Depoimentos />
       <CTAFinal />
       <Footer />

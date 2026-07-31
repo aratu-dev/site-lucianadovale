@@ -18,11 +18,11 @@ export const whatsappLink = (mensagem: string) =>
 
 export const nav = [
   { label: "Início", href: "#inicio" },
-  { label: "Conceito", href: "#conceito" },
+  { label: "Luciana", href: "#sobre" },
   { label: "Espaço", href: "#espaco" },
   { label: "Tratamentos", href: "#tratamentos" },
   { label: "Jornada", href: "#jornada" },
-  { label: "Luciana", href: "#sobre" },
+  { label: "Conceito", href: "#conceito" },
   { label: "Contato", href: "#contato" },
 ];
 
